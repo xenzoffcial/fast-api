@@ -1,3 +1,6 @@
+import os
+try:import Flask
+except:os.system("python3 -m pip install flask")
 from flask import Flask, request, jsonify, send_file
 from werkzeug.utils import secure_filename
 import os
@@ -9,7 +12,7 @@ import subprocess
 import uuid
 from PIL import Image
 import re
-os.system("python3 -m pip install -r requirements.txt")
+
 app = Flask(__name__)
 
 my_queue = queue.Queue()
