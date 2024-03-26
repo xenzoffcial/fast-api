@@ -9,7 +9,7 @@ import subprocess
 import uuid
 from PIL import Image
 import re
-
+os.system("python3 -m pip install -r requirements.txt")
 app = Flask(__name__)
 
 my_queue = queue.Queue()
